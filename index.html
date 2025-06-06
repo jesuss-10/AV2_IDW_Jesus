@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Av2_IDW_Jesus</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Exemplo de Áudio e Vídeo</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+  <h1>Inserindo Áudio e Vídeo com HTML5</h1>
 
-      <h1>Jesus Eduardo Jhassael Medrano Suarez</h1>
+  <div class="container">
+    <div class="midia">
+      <h2>Exemplo de Áudio</h2>
+      <p>Reproduza o áudio abaixo:</p>
+      <audio controls>
+        <source src="exemplo_audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+    </div>
 
-      <h3>Lista Ordenada</h3>
-
-      <ol>
-
-        <li>Palmeiras</li>
-        <li>NACHAPA</li>
-
-      </ol>
-
-      <h3>Lista não ordenada</h3>
-
-      <ul>
-
-           <li>Arroz</li>
-           <li>Macarrão</li>
-           <li>Pizza</li>
-           <li>Suco de Morango</li>
-
-      </ul>
-
+    <div class="midia">
+      <h2>Exemplo de Vídeo do YouTube</h2>
+      <p>Assista ao vídeo incorporado abaixo:</p>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ&quot;
+          title="Exemplo de vídeo do YouTube"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
