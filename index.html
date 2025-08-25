@@ -2,36 +2,133 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Exemplo de Áudio e Vídeo</title>
-  <link rel="stylesheet" href="estilo.css">
+  <title>HTML, CSS e JavaScript - O Trio da Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <h1>Inserindo Áudio e Vídeo com HTML5</h1>
-
-  <div class="container">
-    <div class="midia">
-      <h2>Exemplo de Áudio</h2>
-      <p>Reproduza o áudio abaixo:</p>
-      <audio controls>
-        <source src="exemplo_audio.mp3" type="audio/mpeg">
-        Seu navegador não suporta a tag de áudio.
-      </audio>
+  <nav class="navbar">
+    <div class="logo">WebDev</div>
+    <div class="theme-toggle">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
     </div>
+  </nav>
 
-    <div class="midia">
-      <h2>Exemplo de Vídeo do YouTube</h2>
-      <p>Assista ao vídeo incorporado abaixo:</p>
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ&quot;
-          title="Exemplo de vídeo do YouTube"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+  <header>
+    <div class="header-content">
+      <h1>HTML, CSS e JavaScript</h1>
+      <p class="typing-text">Descubra o poder das tecnologias web!</p>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
       </div>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <section class="tecnologia" data-tech="html">
+      <div class="tech-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="icon">
+      </div>
+      <div class="tech-content">
+        <h2>HTML</h2>
+        <p>O <strong>HTML</strong> é a estrutura do site. Ele define títulos, parágrafos, imagens, links e organiza todo o conteúdo.</p>
+        <div class="tech-details">
+          <button class="details-btn">Ver exemplos</button>
+          <div class="code-preview">
+            <pre><code>&lt;header&gt;
+  &lt;h1&gt;Título&lt;/h1&gt;
+  &lt;p&gt;Parágrafo&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tecnologia" data-tech="css">
+      <div class="tech-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="icon">
+      </div>
+      <div class="tech-content">
+        <h2>CSS</h2>
+        <p>O <strong>CSS</strong> é responsável pelo visual. Ele define cores, fontes, espaçamentos e deixa o site bonito e agradável.</p>
+        <div class="tech-details">
+          <button class="details-btn">Ver exemplos</button>
+          <div class="code-preview">
+            <pre><code>.header {
+  background: #3a86ff;
+  color: white;
+  padding: 20px;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tecnologia" data-tech="js">
+      <div class="tech-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="icon">
+      </div>
+      <div class="tech-content">
+        <h2>JavaScript</h2>
+        <p>O <strong>JavaScript</strong> traz interatividade. Com ele, é possível criar animações, validar formulários e muito mais!</p>
+        <div class="tech-details">
+          <button class="details-btn">Ver exemplos</button>
+          <div class="code-preview">
+            <pre><code>function showMessage() {
+  alert('Olá, mundo!');
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interactive-demo">
+      <h2>Demonstração Interativa</h2>
+      <div class="demo-container">
+        <div class="color-picker">
+          <h3>Experimente mudar as cores!</h3>
+          <input type="color" id="colorPicker" value="#3a86ff">
+          <p>Veja o efeito ao vivo</p>
+        </div>
+        <div class="animation-demo">
+          <h3>Animações com JavaScript</h3>
+          <div class="animation-box"></div>
+          <button id="animate-btn">Animar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre</h3>
+        <p>Site criado para demonstrar o poder do HTML, CSS e JavaScript na construção de experiências web modernas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="#">Documentação HTML</a></li>
+          <li><a href="#">Guia CSS</a></li>
+          <li><a href="#">Tutorial JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 WebDev Learning. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
-
